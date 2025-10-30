@@ -47,4 +47,45 @@ It can listen to your voice commands, respond naturally, open websites, switch b
 ---
 
 ## 🧩 Project Structure
+Nova-Virtual-Assistant/
+│
+├── index.html # Main web page
+├── style.css # Styles and animations
+├── script.js # Core logic and voice control
+├── voice.gif # Animated soundwave visual
+├── mic.svg # Microphone icon
+└── README.md # Project info
+
+
+---
+
+## 🌗 Theme Modes
+
+- 🌙 **Dark Mode** – Default sleek look with gradients  
+- ☀️ **Light Mode** – Clean and bright interface  
+
+Toggle via the top-right button or say:  
+> “Switch to dark mode” / “Switch to light mode”
+
+---
+
+## 🧑‍💻 Author
+
+**Priya Jain**  
+💼 Developer of Nova – a personal voice assistant built with modern web technologies.  
+📧 Contact: [Your Email Here]  
+🌐 GitHub: [https://github.com/your-username](https://github.com/priya0302)
+
+---
+
+## 🌐 Live Demo
+
+Once you enable GitHub Pages, you can access your assistant here 👇  
+👉 **https://your-username.github.io/Nova-Virtual-Assistant/**
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — feel free to use and modify it for learning or personal projects.
 
