@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle at top, #090909, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  overflow: hidden;
+  transition: background 0.5s, color 0.5s;
+}
+
+body.light {
+  background: linear-gradient(to bottom, #f2f2f2, #ffffff);
+  color: #111;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+body.light #themeToggle {
+  color: #333;
+}
+
+#themeToggle:hover {
+  transform: rotate(20deg);
+}
+
+#_logo {
+  width: 200px;
+  animation: float 3s ease-in-out infinite;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Protest Guerrilla", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+}
+
+body.light h1 {
+  color: #111;
+}
+
+#name {
+  color: rgb(43, 105, 212);
+  font-size: 45px;
+}
+
+#va {
+  color: rgb(230, 218, 229);
+  font-size: 45px;
+}
+
+#voice {
+  width: 120px;
+  display: none;
+  animation: pulse 1s infinite;
+}
+
+#btn {
+  width: 50%;
+  background: linear-gradient(to right, rgb(21, 145, 207), rgb(201, 41, 116));
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  border-radius: 30px;
+  color: white;
+  box-shadow: 2px 2px 20px rgba(21,145,207,0.6), 2px 2px 20px rgba(201,41,116,0.6);
+  border: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+#btn:hover {
+  transform: scale(1.05);
+  letter-spacing: 2px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+  100% { opacity: 0.5; transform: scale(1); }
+}
